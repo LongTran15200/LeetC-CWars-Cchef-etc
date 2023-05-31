@@ -3,7 +3,7 @@
 Welcome to my coding challenge repository! Here, I will be sharing my solutions and progress as I tackle coding challenges from platforms like LeetCode, CodeWars, and CodeChef. My primary focus will be on using **C++**, **Java**, and **Python**.
 
 
-![Coding Image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.macworld.com%2Fwp-content%2Fuploads%2F2023%2F01%2Fwhich_programming_language_to_learn_thumb800.jpg%3Fquality%3D50%26strip%3Dall&tbnid=L-TVB7rEjcbM4M&vet=12ahUKEwibgrnd5p7_AhWJPt4AHT0lCfMQMyg3egQIARB9..i&imgrefurl=https%3A%2F%2Fwww.macworld.com%2Farticle%2F672243%2Fcomplete-guide-to-coding-programming-on-mac.html&docid=RMbuFfih2WaKFM&w=800&h=450&q=coding%20image&ved=2ahUKEwibgrnd5p7_AhWJPt4AHT0lCfMQMyg3egQIARB9)
+![Coding Image](https://github.com/LongTran15200/LeetC-CWars-Cchef-etc/blob/main/Images/which_programming_language_to_learn_thumb800.png?raw=true)
 
 
 
