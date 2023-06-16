@@ -12,7 +12,7 @@ int main() {
     int num1 = 11;
     int num2 = num1;
 
-  //num1 variable is changed to 22 which also including num2 due to num2 = num1
+  //num1 variable is changed to 22
     num1 = 22;
 
     cout << "num1 = " << num1 << endl;
@@ -24,7 +24,7 @@ int main() {
 /*
 Output
 num1 = 22
-num2 = 22
+num2 = 11
 */  
 
 //Now let's try with pointers
@@ -49,9 +49,10 @@ int main() {
 /*
 Output
 num1 = 22
-num2 = 11
+num2 = 22
 */
 
+//In my own word, without pointers switching variables will be independent.
 
 
 
