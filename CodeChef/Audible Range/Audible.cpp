@@ -5,7 +5,8 @@ int main() {
 	int t,x;
 	
 	cin >> t;
-	
+
+	//while condition certain t amount
 	while(t--){
 	    
 	    cin >> x;
