@@ -4,7 +4,7 @@ int main()
 {
     int n;
     
-    cin >> n;
+    can >> n;
 
     int arr[n];
     for(int i = 0; i < n; i++){
@@ -12,6 +12,7 @@ int main()
         cin >> arr[i];
         
     }
+    //Create a sort() function from the beginning of the array to the end. Preferably, its easier if you do it in vector in my opinion. 
         sort(arr,arr + n );
         
     for(int i = 0; i < n; i++){
