@@ -16,7 +16,7 @@ std::string toAlternatingCase(const std::string& str) {
 
 
 /*
-Adapted from the tests originally written by a code warrior donaldsebleung */
+Adapted from the tests originally written by a code warrior donaldsebleung 
 Describe(basic)
 {
   It(ShouldPassAllTheTestsProvided)
