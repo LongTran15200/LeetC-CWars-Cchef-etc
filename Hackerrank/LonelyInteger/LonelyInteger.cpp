@@ -19,14 +19,15 @@ int lonelyinteger(vector<int> a) {
     //vector<int> result;
     int result = 0;
     for (size_t i = 0; i < a.size(); i++) {
-        bool founddups = false;
-        for (size_t j = 0; j < a.size(); j++) {
-            if (i != j && a[i] == a[j]) {
-                founddups = true;
+        bool nonDups = true;
+        for (size_t j = i + 1; j < a.size(); j++) {
+            if (a[i] == a[j]) {
+                nonDups = false;
                 break;
             }
         }
-        if (!founddups) {
+        if (nonDups) {
+            
           //result.push_back(a[i]); only when using vector(if to find multiple lonely integers)
             result = a[i];
         }  
