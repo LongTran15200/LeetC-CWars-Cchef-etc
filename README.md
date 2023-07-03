@@ -27,4 +27,4 @@ The repository will include the following:
 
 ### Stay Connected
 
-Feel free to explore this repository and follow along with my coding journey. I encourage you to provide feedback, suggestions, or improvements on any of my solutions. Let's **learn and grow together**!
+Feel free to explore this repository and follow along with my coding journey. I encourage you to provide feedback, suggestions, or improvements on any of my solutions. Let's **learn and grow together**!!
