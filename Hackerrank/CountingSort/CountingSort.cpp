@@ -19,6 +19,8 @@ vector<int> countingSort(vector<int> arr) {
 
   //for each of the variable add up how many number are repeated. 
     for(int i = 0; i < arr.size();i++){
+        //check for each arr[i] starting from 0->100. 
+        //store the variable inside freq[i]. add up the repeated variable.
         freq[arr[i]]++;
     }
     return freq;
