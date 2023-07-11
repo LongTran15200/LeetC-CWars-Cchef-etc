@@ -2,6 +2,30 @@
 
 using namespace std;
 
+//Simpler Class & Objective
+/*
+#include <iostream>
+
+using namespace std;
+
+class simpleStr{
+    public:
+        void saying(){
+            cout << "This is Class";
+        }
+};
+ 
+int main()
+{
+    
+    simpleStr isObject;
+    isObject.saying();
+
+    return 0;
+}
+*/
+
+
 //creating class variable as Cookie
 class Cookie {
     private:
