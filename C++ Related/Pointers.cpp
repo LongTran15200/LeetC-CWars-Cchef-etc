@@ -52,7 +52,7 @@ num1 = 22
 num2 = 22
 */
 
-//In my own word, without pointers switching variables will be independent.
+//In other word, without pointers switching variables will be independent.
 
 
 
