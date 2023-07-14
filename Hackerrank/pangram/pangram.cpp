@@ -47,3 +47,36 @@ int main()
 
     return 0;
 }
+
+//Another improved pangram code
+
+
+#include <iostream>
+#include <string>
+#include <unordered_set>
+
+std::string pangrams(const std::string& sentence) {
+    std::unordered_set<char> uniqueLetters;
+
+    for (char c : sentence) {
+        if (std::isalpha(c)) {
+            uniqueLetters.insert(std::tolower(c));
+            if (uniqueLetters.size() == 26) {
+                return "pangram";
+            }
+        }
+    }
+
+    return "not pangram";
+}
+
+int main() {
+    std::string sentence;
+    std::getline(std::cin, sentence);
+
+    std::string result = pangrams(sentence);
+
+    std::cout << result << std::endl;
+
+    return 0;
+}
