@@ -20,10 +20,11 @@ string pangrams(string s) {
             //this basically subtracting letter in ascii to make either a letter A or a;
             if(alp[i] == tolower(s[j])){
                 count++;
-                break;
+                break; // Exit the inner loop if the letter is found
             }
         }
     }
+    //if all 26 letter found
     if(count == 26){
         return "pangram";
     }else{
