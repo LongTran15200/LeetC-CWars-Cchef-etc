@@ -17,10 +17,14 @@ vector<string> split(const string &);
  */
 
 int birthday(vector<int> s, int d, int m) {
+    //leave count outside of for loop so it wont reset
     int count = 0;
     for(int i = 0; i < s.size();i++){
         int sum = 0;
+        //this for loop up to m num in the array
+        //for example, if m = 3 then j will continue to loop over 3 array.
         for(int j = i; j < i+m;j++){
+            add all the numbers in the loop array.
             sum+=s[j];
         }
         if(sum == d){
