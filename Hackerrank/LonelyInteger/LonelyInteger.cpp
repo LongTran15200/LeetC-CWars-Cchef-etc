@@ -18,9 +18,9 @@ vector<string> split(const string &);
 int lonelyinteger(vector<int> a) {
     //vector<int> result;
     int result = 0;
-    for (size_t i = 0; i < a.size(); i++) {
+    for (int i = 0; i < a.size(); i++) {
         bool nonDups = true;
-        for (size_t j = 0; j < a.size(); j++) {
+        for (int j = 0; j < a.size(); j++) {
             if (i != j &&a[i] == a[j]) {
                 nonDups = false;
                 break;
@@ -36,6 +36,29 @@ int lonelyinteger(vector<int> a) {
     //return result;
     return result;
 }
+// ANOTHER APPROACH MORE EFFICIENT IN O(N) IS USING XOR.
+int lonelyinteger(vector<int> a) {
+    int result = 0;
+
+    for( int i = 0 ; i < a.size(); i++){
+        result ^= a[i];
+    }
+    return result;
+    
+}
+/* example of this output : 0 0 1 2 1;
+using XOR, the binary of each value in the array will be like this;
+0 = 0000;
+0 = 0000;
+1 = 0001;
+2 = 0010;
+1 = 0001;
+If a 1 in the binary is the same it will cancel out. Let say;
+0010 XOR 0010 = 0000; 0110 XOR 0110 = 0000; 1010 XOR 1101 = 0111; As being said, 1 in the same place in binary will get canceled out with XOR
+so if you look at the array without having to iterate, you can already tell the dup will get canceled due to XOR so that is left with 2 as 
+a lonely integer. 
+*/
+
 
 
 /*
