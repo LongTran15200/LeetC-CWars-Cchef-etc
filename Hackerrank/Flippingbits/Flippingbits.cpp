@@ -12,9 +12,20 @@ string rtrim(const string &);
  * The function accepts LONG_INTEGER n as parameter.
 
  */
+long flippingBits(long n) {
+    
+    long max = (pow(2,32)-1);
+    
+    long flipbits = max ^ n;
+    
+    return flipbits;
+}
 
+
+//More Simpler Way
 long flippingBits(long n) {
     //replace unsigned int to 'uint32_t' also works since both automatically calculate 32-bit integers
+    //return unsigned (~n); also works
     return static_cast<unsigned int>(~n); // ~ basically flips the bits of 'n'
 }
 
