@@ -24,7 +24,7 @@ int birthday(vector<int> s, int d, int m) {
         //this for loop up to m num in the array
         //for example, if m = 3 then j will continue to loop over 3 array.
         for(int j = i; j < i+m;j++){
-            add all the numbers in the loop array.
+            //add all the numbers in the loop array.
             sum+=s[j];
         }
         if(sum == d){
