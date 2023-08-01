@@ -18,20 +18,39 @@ vector<string> split(const string &);
 int sockMerchant(int n, vector<int> ar) {
     sort(ar.begin(), ar.end());
     int count = 1; // Declare and initialize count outside the for loop
-    int tPair = 0;
+    int tPairs = 0;
 
     for (int i = 0; i < n - 1; i++) {
         if (ar[i] == ar[i + 1]) {
             count++;
             if (count % 2 == 0) {
-                tPair++;
+                tPairs++;
             }
         } else {
             count = 1; // Reset count if the current element is different from the next element
         }
     }
 
-    return tPair;
+    return tPairs;
+}
+
+//Another Approach!!!!
+
+int sockMerchant(int n, vector<int> &ar) {
+    map <int, int> freq;
+    
+    for(int i :ar){
+        freq[i]++;
+    }
+    int tPairs = 0;
+    
+    for(auto const& pair: freq){
+        int count = pair.second/2;
+        
+        tPairs += count;
+        
+    }
+    return tPairs;
 }
 
 /*
