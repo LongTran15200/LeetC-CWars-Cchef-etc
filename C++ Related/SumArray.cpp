@@ -45,8 +45,7 @@ int main()
     int arr[] = { 12, 3, 4, 15 };
     int n = sizeof(arr) / sizeof(arr[0]);
     // calling accumulate function, passing first, last
-    // element and
-    // initial sum, which is 0 in this case.
+    // element and initial sum, which is 0 in this case.
     cout << "Sum of given array is "
          << accumulate(arr, arr + n, 0);
     return 0;
