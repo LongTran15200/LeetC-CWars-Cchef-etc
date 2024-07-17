@@ -51,4 +51,17 @@ int main () {
   
 }
 
+//Strings and int
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main () {
+
+  string num1 = "25";
+  int num2 = 69;
+  num1 += to_string(num2);
+  cout << num1;
+  //or just output cout << num1 <<num2;
+}
+
 
