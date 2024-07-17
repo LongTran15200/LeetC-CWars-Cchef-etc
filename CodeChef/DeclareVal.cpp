@@ -26,3 +26,17 @@ int main() {
     cout << a+b << endl;
     
 }
+
+//String
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string name = "Apple";
+    
+    cout << name;
+
+
+
+  
+}
