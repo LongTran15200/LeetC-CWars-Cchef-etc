@@ -4,9 +4,6 @@ def curse(weapon_damage):
     return lesser_cursed, greater_cursed
 
 
-# Don't modify below this line
-
-
 def test(weapon_damage):
     print("Weapon's base damage:", float(weapon_damage))
     print("Cursing...")
