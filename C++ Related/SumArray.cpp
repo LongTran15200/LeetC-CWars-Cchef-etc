@@ -50,3 +50,21 @@ int main()
          << accumulate(arr, arr + n, 0);
     return 0;
 }
+
+
+//Or Vector :D
+#include <vector>
+#include <iostream>
+
+int main(){
+
+    std::vector<int> arr = {1, 2, 3, 4, 5};
+    int numElements = arr.size();
+    int sum = 0;
+    for(int i = 0; i < numElements;i++){
+        sum += arr[i];
+    }
+    std::cout << sum <<std::endl;
+    
+    return 0;
+}
