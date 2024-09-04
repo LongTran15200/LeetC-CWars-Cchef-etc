@@ -21,7 +21,7 @@ int main()
                pid = fork();
                
                if(pid == 0){
-                 std::cout << "I am a grandchild process from child process " << i << std::endl;
+                 std::cout << "I am a grandchild process from child process " << j << std::endl;
                 
                  _exit(0);
                }
@@ -41,7 +41,7 @@ Output
 I am the parent process
 I am the child process 0
 I am the child process 1
-I am a grandchild process from child process 1
+I am a grandchild process from child process 0
 I am a grandchild process from child process 1
 I am the child process 2
 I am the child process 3
