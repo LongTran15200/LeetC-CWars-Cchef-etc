@@ -66,12 +66,16 @@ total = 0
 
 num_of_dice = int(input("Enter number of dice: "))
 
+#store the dice in the list
 for die in range(num_of_dice):
     dice.append(random.randint(1,12))
 
+#using list comprehension to filter odd and even dice
 odd_dice = [die for die in dice if die%2 != 0]
 even_dice = [die for die in dice if die%2 == 0]
 
+
+#if odd dice then print 2 dice in each line
 if odd_dice:
     print("\nOdd Dice:")
     for i in range(0,len(odd_dice),2):
@@ -79,7 +83,8 @@ if odd_dice:
             for die in odd_dice[i:i+2]:
                 print(dice_art[die][line], end="")
             print()
-
+          
+#if even dice then print 2 dice in each line
 if even_dice:
     print("\nEven Dice:")
     for i in range(0,len(even_dice),2):
