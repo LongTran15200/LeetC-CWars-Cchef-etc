@@ -69,12 +69,11 @@ num_of_dice = int(input("Enter number of dice: "))
 for die in range(num_of_dice):
     dice.append(random.randint(1,12))
 
-print(dice)
-
 odd_dice = [die for die in dice if die%2 != 0]
 even_dice = [die for die in dice if die%2 == 0]
 
 if odd_dice:
+    print("Odd Dice: \n")
     for i in range(0,len(odd_dice),2):
         for line in range(5):
             for die in odd_dice[i:i+2]:
@@ -82,6 +81,7 @@ if odd_dice:
             print()
 
 if even_dice:
+    print("Even Dice: \n")
     for i in range(0,len(even_dice),2):
         for line in range(5):
             for die in even_dice[i:i+2]:
