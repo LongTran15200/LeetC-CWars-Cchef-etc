@@ -93,7 +93,17 @@ if even_dice:
                 print(dice_art[die][line], end="")
             print()
 
+sorted_dice = sorted(dice)
 
+def print_dice(dice_list, display):
+    print(display)
+    if dice_list:
+        for line in range(5):
+            print(" " .join(dice_art[die][line] for die in dice_list))
+
+print_dice(sorted_dice, "\nDisplay dice:")
+
+print(f"Sorted dice: {sorted_dice}")
 total = sum(dice)
 print(f"dice: {dice}")
 print(f"total: {total}")
