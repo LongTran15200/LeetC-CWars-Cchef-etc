@@ -38,3 +38,38 @@ class Solution(object):
             for j in range(i + 1, len(nums)):
                 if j > i + 1 and nums[j] == nums[j-1]:
                     continue
+
+#Time complexity O(n^2)
+class Solution(object):
+    def threeSum(self, nums):
+        result = []
+        nums.sort()  #sort in order to prevent any duplication 
+        for i in range(len(nums)):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+            left = i+1
+            right = len(nums) - 1
+
+            #while left is still smaller than right ensure left and right wont be on the same index
+            #since nums is being sorted then while loop will always triggered unless all variables are the same
+            while left < right:
+                total = nums[i] + nums[left] + nums[right]
+                #keep since its being sorted left will always be smaller number 
+                #if total is less than 0 then left will iterate 
+                if total < 0:
+                    left += 1
+                #else if total is more than 0 right will move
+                elif total > 0:
+                    right -= 1
+                else:
+                    #if total = 0 then add the 3 nums into result
+                    result.append([nums[i], nums[left], nums[right]])
+                    #after found the result if the next ieration is similar to the previous then skip to the next iteration from left or right
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    while left < right and  nums[right] == nums[right - 1]:
+                        right -= 1
+                
+                left += 1
+                right -=1
+        return result
